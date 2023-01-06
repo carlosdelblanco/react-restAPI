@@ -2,9 +2,14 @@ import React from "react";
 
 function Character({ character }) {
   return (
-    <div>
+    <div className="text-center p-5">
       <h2>{character.name}</h2>
-      <img src={character.image} alt={character.name} />
+      <img
+        className="img-fluid rounded-pill"
+        src={character.image}
+        alt={character.name}
+      />
+      <p>{character.origin.name}</p>
     </div>
   );
 }
