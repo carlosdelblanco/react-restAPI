@@ -2,6 +2,6 @@
 react restAPI app
 
 # Technologies used
-React
-Vite
-Bootstrap
+- React
+- Vite
+- Bootstrap
