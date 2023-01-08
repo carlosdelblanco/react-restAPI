@@ -3,10 +3,10 @@ import Character from "./Character";
 
 function NavPage(props) {
   return (
-    <header className="d-flex fustify-content-between align-items-center">
+    <header className="d-flex fustify-content-between align-items-center d-flex justify-content-between">
       <p>Page: {props.page}</p>
       <button
-        className="btn btn-primary btn-sm"
+        className="btn btn-primary btn-sm "
         onClick={() => props.setPage(props.page + 1)}
       >
         Page {props.page + 1}
@@ -28,7 +28,6 @@ function CharacterList() {
       const data = await response.json();
       setLoading(false);
       setCharacters(data.results);
-      set;
     }
 
     fetchData();
@@ -50,6 +49,7 @@ function CharacterList() {
           })}
         </div>
       )}
+      <NavPage page={page} setPage={setPage} />
     </div>
   );
 }
